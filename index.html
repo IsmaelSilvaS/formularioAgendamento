@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="POST">
+        <fieldset>
+            <legend>Informações para Agendamento</legend>
+            <label for="nome">Nome
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            </label>
+            <br>
+            <label for="email">E-mail
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            </label>
+            <br>
+            <label for="telefone">Telefone
+                <input type="tel" name="telefone" id="telefone" placeholder="DDD + XXXXXXXXX" required>
+            </label>
+            <br>
+            <label class="procedimento" for="procedimento" required><span>Procedimento</span>
+                <input type="checkbox" name="Design de sobrancelhas" id="dsobrancelhas"> Design de Sobrancelha
+                <input type="checkbox" name="Design Henna" id="hennasobrancelhas"> Design com Henna
+                <input type="checkbox" name="dermaplaning" id="dsobrancelhas"> Dermaplaning
+                <input type="checkbox" name="limpeza" id="dsobrancelhas"> Limpeza de Pele
+                <input type="checkbox" name="curso" id="dsobrancelhas"> Curso de design
+            </label>
+            <br>
+            <select name="pagamento" id="pagamento">
+                <optgroup required>
+                    <option value="dinheiro">Dinheiro em espécie</option>
+                    <option value="credito">Cartão de crédito</option>
+                    <option value="debito">Cartão de débito</option>
+                    <option value="boleto">Boleto</option>
+                    <option value="pix">Pix</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="data">Defina sua data
+                <input type="datetime-local" name="data" id="data">
+            </label>
+            <br>
+            <label for="obs">Sua menssagem<br>
+                <textarea name="obs" id="obs" cols="30" rows="5" placeholder="Coloque uma observação..."></textarea>
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
